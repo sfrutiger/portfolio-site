@@ -11,4 +11,9 @@
         @apply px-4;
         @apply cursor-pointer;
     }
+    .section-header {
+        @apply text-4xl;
+        @apply font-bold;
+        @apply border-b-4;
+    }
 }
