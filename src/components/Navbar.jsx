@@ -1,7 +1,5 @@
 import React, {useState} from 'react';
 import {FaBars, FaTimes, FaGithub, FaLinkedin} from 'react-icons/fa';
-import {HiOutlineMail} from 'react-icons/hi';
-import {BsFillPersonLinesFill} from 'react-icons/bs';
 import {Link} from 'react-scroll';
 
 const Navbar = () => {
@@ -9,7 +7,7 @@ const Navbar = () => {
     const handleClick = () => setNav(!nav)
 
     return (
-        <div className='fixed w-full h-[80px] flex justify-end md:justify-center items-center px-4 bg-[darkblue]'>
+        <div className='fixed w-full h-[80px] flex justify-end md:justify-center items-center px-4 md:bg-[darkblue]'>
             <ul className='hidden md:flex'>
                 <li>
                     <Link to="home" smooth={true} duration={300}>Home</Link>
@@ -50,24 +48,23 @@ const Navbar = () => {
                 <li className='py-4 text-4xl'>
                     <Link to="contact" smooth={true} duration={300} onClick={handleClick}>Contact</Link>
                 </li>
+                <li className='py-4 text-4xl flex'>
+                    <a className='px-4' href='https://github.com/sfrutiger'><FaGithub size={30}/></a>
+                    <a className='px-4' href='https://www.linkedin.com/in/seth-frutiger'><FaLinkedin size={30}/></a>
+                </li>
             </ul>
 
             {/* Social icons */}
             <div className='hidden md:flex fixed flex-col bottom-[2%] left-0'>
                 <ul>
                     <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-400'>
-                        <a className='flex justify-between items-center w-full text-white' href='https://www.linkedin.com/in/seth-frutiger-651665232'>
-                            LinkedIn <FaLinkedin size={30}/>
-                        </a>
-                    </li>
-                    <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-400'>
                         <a className='flex justify-between items-center w-full text-white' href='https://github.com/sfrutiger'>
                             Github <FaGithub size={30}/>
                         </a>
                     </li>
                     <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-400'>
-                        <a className='flex justify-between items-center w-full text-white' href='/'>
-                            Email <HiOutlineMail size={30}/>
+                        <a className='flex justify-between items-center w-full text-white' href='https://www.linkedin.com/in/seth-frutiger'>
+                            LinkedIn <FaLinkedin size={30}/>
                         </a>
                     </li>
                 </ul>

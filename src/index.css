@@ -11,9 +11,34 @@
         @apply px-4;
         @apply cursor-pointer;
     }
+    .section {
+        @apply max-w-[1000px];
+        @apply mx-auto;
+        @apply p-4;
+        @apply flex;
+        @apply flex-col;
+        @apply justify-center;
+        @apply w-[60%];
+        @apply lg:w-[40%];
+        @apply h-full;
+    }
     .section-header {
         @apply text-4xl;
         @apply font-bold;
         @apply border-b-4;
+        /* @apply inline; */
+    }
+    label {
+        @apply md:text-red-100;
+    }
+    input {
+        @apply text-black;
+        @apply w-full;
+        @apply mb-2;
+    }
+    textarea {
+        @apply text-black;
+        @apply w-full;
+        @apply h-[100px];
     }
 }
