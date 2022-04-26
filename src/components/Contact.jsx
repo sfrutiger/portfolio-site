@@ -37,7 +37,9 @@ const Contact = () => {
                         <input type="text" name="subject" required/>
                         <label>Message</label>
                         <textarea name="message" required/>
-                        <input type="submit" value="Send" className='text-white border-2 px-4 py-4 my-2 flex items-center cursor-pointer'/>
+                        <div className='border-2 my-2 flex items-center'>
+                        <input type="submit" value="Send" className='my-2 w-full h-full text-white cursor-pointer'/>
+                        </div>
                     </form>
                     <p className={!confirmSubmit ? 'hidden' : 'flex'}>Message sent</p>
                 </div>
