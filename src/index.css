@@ -3,38 +3,40 @@
 @tailwind utilities;
 
 @layer base {
-    body {
-        @apply bg-[darkblue];
-        @apply text-white;
-    }
-    li {
-        @apply px-4;
-        @apply cursor-pointer;
-    }
-    .section {
-        @apply max-w-[1000px];
-        @apply mx-auto;
-        @apply p-4;
-        @apply flex;
-        @apply flex-col;
-        @apply justify-center;
-        @apply w-[60%];
-        @apply lg:w-[40%];
-        @apply h-full;
-    }
-    .section-header {
-        @apply text-4xl;
-        @apply font-bold;
-        @apply border-b-4;
-    }
-    input {
-        @apply text-black;
-        @apply w-full;
-        @apply mb-2;
-    }
-    textarea {
-        @apply text-black;
-        @apply w-full;
-        @apply h-[100px];
-    }
+  * {
+    @apply bg-[darkblue] 
+    text-white;
+  }
+
+  li {
+    @apply px-4 cursor-pointer;
+  }
+  .section {
+    @apply max-w-[1000px] 
+    mx-auto
+    p-4 
+    flex 
+    flex-col 
+    justify-center 
+    w-[60%] 
+    lg:w-[40%] 
+    h-full;
+  }
+  .section-header {
+    @apply text-4xl
+    font-bold
+    border-b-4;
+  }
+  input {
+    @apply bg-white
+    text-black
+    w-full
+    mb-2;
+  }
+  textarea {
+    @apply bg-white
+    text-black
+    w-full
+    h-[100px];
+  }
 }
