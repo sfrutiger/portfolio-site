@@ -4,7 +4,7 @@
 
 @layer base {
   * {
-    @apply bg-[darkblue] 
+    @apply bg-blue-900
     text-white;
   }
 
@@ -27,6 +27,19 @@
     font-bold
     border-b-4;
   }
+
+  .social-icons {
+    @apply w-[160px] 
+    h-[60px] 
+    flex 
+    justify-between 
+    items-center 
+    ml-[-100px] 
+    hover:ml-[-10px] 
+    duration-300 
+    bg-blue-400;
+  }
+
   input {
     @apply bg-white
     text-black

@@ -7,7 +7,7 @@ const Navbar = () => {
     const handleClick = () => setNav(!nav)
 
     return (
-        <div className='fixed w-full h-[80px] flex justify-end md:justify-center items-center px-4 md:bg-[darkblue]'>
+        <div className='fixed w-full h-[80px] flex justify-end md:justify-center items-center px-4'>
             <ul className='hidden md:flex'>
                 <li>
                     <Link to="home" smooth={true} duration={300}>Home</Link>
@@ -32,7 +32,7 @@ const Navbar = () => {
             </div>
 
             {/* Mobile menu */}
-            <ul className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen bg-[darkblue] flex flex-col justify-center items-center'}>
+            <ul className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen flex flex-col justify-center items-center'}>
                 <li className='py-4 text-4xl'>
                     <Link to="home" smooth={true} duration={300} onClick={handleClick}>Home</Link>
                 </li>
@@ -57,14 +57,14 @@ const Navbar = () => {
             {/* Social icons */}
             <div className='hidden md:flex fixed flex-col bottom-[2%] left-0'>
                 <ul>
-                    <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-400'>
-                        <a className='flex justify-between items-center w-full text-white' href='https://github.com/sfrutiger'>
-                            Github <FaGithub size={30}/>
+                    <li className='social-icons'>
+                        <a className='flex justify-between items-center w-full bg-blue-400 text-white' href='https://github.com/sfrutiger'>
+                            Github <FaGithub className="bg-blue-400" size={30}/>
                         </a>
                     </li>
-                    <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-400'>
-                        <a className='flex justify-between items-center w-full text-white' href='https://www.linkedin.com/in/seth-frutiger'>
-                            LinkedIn <FaLinkedin size={30}/>
+                    <li className='social-icons'>
+                        <a className='flex justify-between items-center w-full bg-blue-400 text-white' href='https://www.linkedin.com/in/seth-frutiger'>
+                            LinkedIn <FaLinkedin className="bg-blue-400" size={30}/>
                         </a>
                     </li>
                 </ul>
