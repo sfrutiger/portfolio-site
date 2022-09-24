@@ -15,11 +15,21 @@ const Projects = () => {
                 those ingredients.
               </p>
               <div className="flex flex-col sm:flex-row items-left">
-                <button className="text-white w-[100px] border-2 px-6 py-3 my-2">
-                  <a href="https://www.catchandcook.app/">Site</a>
+                <button className="text-white w-[100px] h-full border-2 my-2 mr-2">
+                  <a
+                    className="block w-full h-full align-baseline py-4"
+                    href="https://www.catchandcook.app/"
+                  >
+                    Site
+                  </a>
                 </button>
-                <button className="text-white w-[100px] border-2 px-6 py-3 my-2 sm:ml-2">
-                  <a href="https://github.com/sfrutiger/catch-and-cook">Code</a>
+                <button className="text-white w-[100px] h-full border-2 my-2">
+                  <a
+                    className="block w-full h-full align-baseline py-4"
+                    href="https://github.com/sfrutiger/catch-and-cook"
+                  >
+                    Code
+                  </a>
                 </button>
               </div>
             </li>
@@ -30,11 +40,21 @@ const Projects = () => {
                 the MERN stack.
               </p>
               <div className="flex flex-col sm:flex-row items-left">
-                <button className="text-white w-[100px] border-2 px-6 py-3 my-2">
-                  <a href="https://easy-soap.herokuapp.com/">Site</a>
+                <button className="text-white w-[100px] h-full border-2 my-2 mr-2">
+                  <a
+                    className="block w-full h-full align-baseline py-4"
+                    href="https://easy-soap.herokuapp.com/"
+                  >
+                    Site
+                  </a>
                 </button>
-                <button className="text-white w-[100px] border-2 px-6 py-3 my-2 sm:ml-2">
-                  <a href="https://github.com/sfrutiger/easy-soap">Code</a>
+                <button className="text-white w-[100px] h-full border-2 my-2">
+                  <a
+                    className="block w-full h-full align-baseline py-4"
+                    href="https://github.com/sfrutiger/easy-soap"
+                  >
+                    Code
+                  </a>
                 </button>
               </div>
             </li>
